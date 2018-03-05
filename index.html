@@ -1,0 +1,354 @@
+<style>
+body{
+background-color:#000000;
+background-image: url('https://i.imgur.com/bwbWpTP.png') !important; 
+background-repeat:repeat !important; 
+background-position:center !important; 
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #ffffff;}
+
+#picbox1 {
+position:absolute;
+background-image: url('https://i.imgur.com/4ZBy3u9.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+width:10%;
+height:20%;
+left:37.5%;
+top:5%;
+}
+
+#title {
+position:absolute;
+width:15%;
+height:5%;
+left:47.5%;
+top:17%;
+font-family:Amatic SC;
+font-size:180%;
+text-align:center;
+color:#58738D;
+background-image: url('https://i.imgur.com/lMo2muE.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important;
+background-size:100% 100%;
+}
+
+#picbox2 {
+position:absolute;
+background-color:#e6e6e6;
+border:1px solid #666666;
+width:25%;
+height:30%;
+left:37.5%;
+top:23%;
+color:#e6e6e6;
+}
+
+#content {
+position:absolute;
+background-color:#D2D2D2;
+border:1px solid #666666;
+overflow:auto;
+padding:1%;
+width:23.05%;
+height:30%;
+left:37.5%;
+top:54%;
+font-family:Pathway Gothic One;
+font-size:80%;
+color:#000000;
+}
+
+#friendbox {
+display:inline-block;
+width:32%;
+height:25%;
+font-size:90%;
+}
+
+#tabbox1 {
+position:absolute;
+width:10%;
+height:30%;
+left:30%;
+top:23%;
+}
+
+#tabbox2 {
+position:absolute;
+width:10%;
+height:30%;
+left:60.05%;
+top:23%;
+}
+
+.tabs1 {
+display:block;
+padding:1%;
+width:100%;
+height:13%;
+margin-top:15%;
+text-align:left;
+color:#ffffff;
+font-family:Amatic SC;
+font-size:100%;
+background-color:#58738D;
+border:1px solid #ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs1:hover {
+background-color:#6D8041;
+color:#ffffff;
+width:120%;
+margin-left:-30%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs2 {
+display:block;
+padding:1%;
+width:100%;
+height:13%;
+margin-top:15%;
+text-align:right;
+color:#ffffff;
+font-family:Amatic SC;
+font-size:100%;
+background-color:#58738D;
+border:1px solid #ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs2:hover {
+background-color:#6D8041;
+color:#ffffff;
+width:120%;
+margin-left:10%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
+display: none;
+}
+
+a {
+color:#6D8041;
+}
+
+i {
+color:#6D8041;
+font-size:90%;
+}
+
+h1 {
+color: #58738D;
+border-bottom: 1px dashed #666666;
+font-family: Amatic SC;
+text-align:center;
+font-size: 120%;
+}
+
+b {
+font-size: 100%;
+color:#58738D;
+}
+</style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-4/oth374.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pathway+Gothic+One" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('picbox2').innerHTML=document.getElementById(id).innerHTML}</script>
+
+
+<div id="picbox1">
+</div>
+<div id="title">
+<b>The Violinist</b> <FONT COLOR="#6D8041">❤</FONT>
+</div>
+<div id="tabbox1">
+<span class="tabs1" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">⋆ Details</span>
+<span class="tabs1" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">⋆ History</span>
+<span class="tabs1" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">⋆ Relations</span>
+</div>
+<div id="tabbox2">
+<span class="tabs2" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Inventory ⋆</span>
+<span class="tabs2" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Conjuration ⋆</span>
+<span class="tabs2" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">Spiritualism ⋆</span>
+</div>
+<div id="picbox2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/csNfjev.png"/>
+</div>
+<div id="content">
+<h1>Basic Information</h1>
+<b>Name:</b> Nella Voltolini<br>
+<b>Age:</b> Early Twenties<br>
+<b>Birthdate:</b> April 14th<br>
+<b>Gender:</b> Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Italian<br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://vetiver.weebly.com">Vetiver Academy</a><br>
+<b>Tree(s):</b> Conjuration<br>
+<b>Rank:</b> Paige<br>
+<b>Height:</b> 5'7"<br>
+<b>Weight:</b> 120 lbs.
+</div>
+
+<div id="tab1">
+<h1>Appearance</h1>
+While not very muscular, Nella has still grown to be very fit in stature. There isn't very much excess mass to her slender frame, save for her luxuriously rounded bust and rear, allowing her to stay small and agile. While she doesn't have very much strength she makes up for it in endurance and flexibility. Her skin is smooth and blemish-free, stretching perfectly over her hourglass figure in its soft brown hues. Very dark thick brown hair hangs frames her face and reaches all the way to her lower back. Nella's facial structure is rather gentle, her cheekbones visible but softened by rosy rounded cheeks, a small pointed chin, a narrow cute nose, and a pair of full pink lips. Her eyes are wide, being the main cause of her youthful appearance, but her irises are such a dark shade of brown that it is hard to separate them from her black pupils. 
+<br><br>
+<h1>Attire</h1>
+She is very modest and simple in her style choice, wearing mostly t-shirts and skirts or long pants. Very little jewelry ever decorates her body and her long hair is usually left to hang down naturally. 
+<br><br>
+<h1>Personality</h1>
+As a human mage trials have led her to be a very calculating individual. She may come off as shy or reserved but Nella is primarily quiet. She continuously watches in order to learn everything she can about a person. When she does speak, her words are few and deliver exactly what is on her mind and nothing more or less. She often spends her energy learning what she can do to help others around her, but some suspect a scheme behind her innocent eyes.
+</div>
+<div id="tab2">
+<img style="height:100%;" src="https://i.imgur.com/Z0Cic4b.png"/> ------------ <img style="height:100%;" src="https://i.imgur.com/tgUtRuq.png"/>
+</div>
+
+<div id="tab3">
+<h1>Nella's Story Thus Far</h1>
+For her entire childhood, Nella Maria Voltolini was raised in a little orphanage off the city known as Verona, Italy. Unbeknownst to her, she was one of two Voltolini daughters, her father a renown surgeon and her mother an elite violinist. She grew up very shy in a dog-eat-dog world, her only friends being a boy named Apollo and her own violin. Music was her light in a dark world and she pursued it passionately since the day she could walk.
+<br><br>
+When she came of age and was legally allowed to leave the orphanage to live on her own, Nella headed straight for The Temple of Symphony in Venice, the patron goddess of music. There she would serve her favorite and most cherished deity with her natural talent. A few years brought her to high ranks within the temple, which meant she was allowed around some of the most prestigious musicians of her time. It was with them that she discovered magic!
+<br><br>
+The Arcane Arts piqued the young woman's interest, and rumors of magical academies made her fantasies possible. She set out in search of a very specific school--proof of its existence nothing more than rumor--for mages with Symphony's blessing, promising to return and continue serving Her. The journey was fruitful and she began learning how to access her own mana.
+<br><br>
+A short time after her arrival and her developing relationship with an Auror named Ryan O'Connor, her loyalty to her heart led her to run away from the Academy with him. He and his closest friends had committed crimes against the staff of the academy and were considered exiles. While they attempted to live on the run, they were aprehended, and a scuffle resulted in her own death as well as the death of her dearest. Her body rests somewhere in the grasp of the mages they so desperately attempted to escape, her spirit awaiting revival anxiously so she can be with her loved ones again, and continue her journey to becoming a powerful mage.
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://68.media.tumblr.com/0d2fb25d7a8ff0c9b5cd35d8c7353ccd/tumblr_nukycsA6G21ssq9uio1_500.gif"/>
+</div>
+
+<div id="tab5">
+<h1>Foundations & Relations</h1>
+<div id="friendbox">
+<a target="_blank" href="http://musician.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/m/u/musician/thumb.jpg"/></a>
+<a target="_blank" href="http://musician.chatango.com">Ryan O'Connor</a><br>
+"Musician"<br>
+<b>Boyfriend</b><br>
+<i>Paige:</i> Conjuration</div>
+<div id="friendbox">
+<a target="_blank" href="http://glass.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/g/l/glass/thumb.jpg"/></a>
+<a target="_blank" href="http://glass.chatango.com">Claire O'Connor</a><br>
+"Glass"<br>
+<b>Best Friend</b><br>
+<i>NPC</i>
+</div>
+<div id="friendbox">
+<a target="_blank" href="http://alkra.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/a/l/alkra/thumb.jpg"/></a>
+<a target="_blank" href="http://alkra.chatango.com">Alkra</a><br>
+"Alkra"<br>
+<b>Acquaintance</b><br>
+<i>Archmage:</i> Kinetics
+</div>
+<div id="friendbox">
+<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="">???</a><br>
+"???"<br>
+<b>???</b><br>
+<i>???</i>
+</div>
+<div id="friendbox">
+<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="">???</a><br>
+"???"<br>
+<b>???</b><br>
+<i>???</i>
+</div>
+<div id="friendbox">
+<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="">???</a><br>
+"???"<br>
+<b>???</b><br>
+<i>???</i>
+</div>
+<div id="friendbox">
+<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="">???</a><br>
+"???"<br>
+<b>???</b><br>
+<i>???</i>
+</div>
+<div id="friendbox">
+<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="">???</a><br>
+"???"<br>
+<b>???</b><br>
+<i>???</i>
+</div>
+<div id="friendbox">
+<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="">???</a><br>
+"???"<br>
+<b>???</b><br>
+<i>???</i>
+</div>
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://68.media.tumblr.com/42a43df7cee38dd7317a2f91c12305a4/tumblr_myylri5dVq1qbvovho2_500.gif"/>
+</div>
+
+<div id="tab7">
+<h1>Items</h1>
+<b>The Unstringed Violin</b><br>
+Just the typical body of a full sized Stradivarius violin, crafted out of oak. While the instrument itself is nearly as old as its owner, the hollow wooden item has no strings attached to it. Nella often carries this object strapped to her back like a blade or a quiver of arrows would normally be. 
+<br><br>
+<h1>Medium</h1>
+Not yet accessible.
+<br><br>
+<h1>Universal Spells (Mana Manipulation)</h1>
+<b>Mana Weave</b><br>
+The ability to channel mana into the palms of ones hands and their mediums. This is basic mana control and the first spell every mage should learn.
+<br><br>
+<b>Mana Spark</b><br>
+A basic projectile attack created out of the users mana. This is the first offensive spell that a mage will learn.
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XB2EBqq.gif"/>
+</div>
+
+<div id="tab9">
+<h1>Conjuration (Paige)</h1>
+<i>"Allows you to summon any range of objects to your disposal. These Summonings are imbued with special properties or given specific abilities. Conjurers may learn to animate their summonings telekinetically, as well as place certain rules or restrictions upon their objects. Such mages may be able to access the capabilities of other trees in a limited capacity."</i>
+<br><br>
+<h1>Paige Spells</h1>
+<b>Grabby Hand (Taught by Ryan O'Connor)</b><br>
+Nella summons a strange, sort of ethereal glove that covers her hand, with a magical tether attached. Nella can shoot this glove off of her hand to reach for an object/person a max distance of (15) feet away; and can either haul the object toward her or pull herself toward the object, akin to a grappling hook.
+<br><br>
+<b>Basic Tool; Violinist's Bow</b><br>
+An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes. It's only tin(?) in durability (scales to iron? at Mage) and has a magical ability only accessible in archer's bow form (since the transformation has no use and is just for aesthetic sake so she can play her violin with it, goes along with her theme) which allows it to fire an arrow shaped energy construct. Only one of these energy arrows can be active at a time, and are the same durability/grade as the bow itself (tin?, scales to iron? at Mage) and in order to form one the caster must pull back on the bowstring, aim, and charge for a rotation. The energy arrows can fly about as fast as an underhanded tossed ball and continue their flight path for thirty feet before dissipating entirely. Regular base nonmagic arrows can still be used with this bow.
+<br><br>
+<b>Mask of Anonymity</b><br>
+A tin(?) construct (scales until reaching Iron? at Mage) that covers the entirety of the caster's face and offers her a slight buff in physical speed (x1.5) when summoned (wears off when desummoned,  destroyed, or is no longer in physical contact with the caster). The mask has lenses for the eyes that allow the caster to see out but not those on the outside to see in. There are very thin layered vents in the mask's surface that allow the caster to breathe when it is summoned, but are too small for even most insects to crawl in through. While the mask can be removed at will when summoned, it has a magical ability that allows it to stick to the frame of the caster's face perfectly and tightly enough to stay on unless intentionally removed.
+<br><br>
+</div>
+<div id="tab10">
+<img style="height:100%;margin-left:15%;" src="https://i.imgur.com/ZFYndux.png"/>
+</div>
+
+<div id="tab11">
+<h1>Spiritualism (N/A)</h1>
+<i>"In this tree, you learn to converse with spirits embodying nature and use them to activate spells. A basic use involves controlling plants, trees and vegetation. You can go so far as to manipulate insects and, in higher levels, the spirits of the elements. A Spiritualist can consult the spirits, heal people using their life force and even control the spirits of time and space in order to alter reality. How ever spiritualists cannot communicate with more than one set of spirits at a time and have a very high cast time because not only do they need time to give their mana to the spirits but also ask the spirits for their help. The only way to be a spiritualist is to have a peaceful heart and a firm resolve for your cause so much that it persuades the other spirits, if there is ever any doubt the spirits will not listen to you."</i>
+<br><br>
+Not yet accessible.
+</div>
+<div id="tab12">
+<img style="height:100%;margin-left:15%;" src="https://i.imgur.com/NIMPSld.png"/>
+</div>
