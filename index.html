@@ -1,199 +1,451 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
 <style>
 body{
-background-color:#000000;
-background-image: url('https://i.imgur.com/bwbWpTP.png') !important; 
-background-repeat:repeat !important; 
-background-position:center !important; 
-}
-
-::-webkit-scrollbar {width: 3px; height: 3px;}
-::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #ffffff;}
-
-#picbox1 {
-position:absolute;
-background-image: url('https://i.imgur.com/4ZBy3u9.png') !important; 
+background-image: url('https://i.imgur.com/a9QYLNe.jpg') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
-background-size:contain;
-width:10%;
-height:20%;
-left:37.5%;
+background-size:cover;
+background-color:#cccccc;
+}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #333333;}
+
+#bgbox {
+position:absolute;
+width:25%;
+height:80%;
+top:20%;
+left:75%;
+background-image: url('https://i.imgur.com/UWntpi2.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#bigpicbox {
+position:absolute;
+background-color:rgba(255, 255, 255, 0.56);
+width:20%;
+left:18.7%;
+height:57%;
+top:17%;
+}
+
+#picborder {
+position:relative;
+border:4px dashed #B6B6B6;
+width:85%;
+height:88%;
+left:6.5%;
 top:5%;
 }
 
-#title {
-position:absolute;
-width:15%;
-height:5%;
-left:47.5%;
-top:17%;
-font-family:Amatic SC;
-font-size:180%;
-text-align:center;
-color:#58738D;
-background-image: url('https://i.imgur.com/lMo2muE.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
+#picbox {
+position:relative;
+background-color:#B6B6B6;
+width:86.5%;
+height:90%;
+left:6.5%;
+top:5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#picbox2 {
+#bow1 {
 position:absolute;
-background-color:#e6e6e6;
-border:1px solid #666666;
-width:25%;
-height:30%;
-left:37.5%;
-top:23%;
-color:#e6e6e6;
+width:20%;
+height:20%;
+top:-4%;
+left:-2%;
+background-image: url('https://i.imgur.com/olByUem.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#bigtabbox {
+position:absolute;
+background-color:rgba(255, 255, 255, 0.56);
+width:20%;
+left:18.7%;
+height:10%;
+top:75%;
+}
+
+#tabboxborder {
+position:relative;
+border:4px dashed #B6B6B6;
+width:85%;
+height:50%;
+left:6.5%;
+top:20%;
+}
+
+#bow2 {
+position:absolute;
+width:70%;
+height:70%;
+top:40%;
+left:-27%;
+background-image: url('https://i.imgur.com/AepGVcL.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#bigcontentbox {
+position:absolute;
+background-color:rgba(255, 255, 255, 0.56);
+width:20%;
+left:39.2%;
+height:40%;
+top:17%;
+}
+
+#contentborder {
+position:relative;
+border:4px dashed #B6B6B6;
+width:84%;
+height:85%;
+left:6.5%;
+top:6%;
 }
 
 #content {
-position:absolute;
-background-color:#D2D2D2;
-border:1px solid #666666;
+position:relative;
 overflow:auto;
-padding:1%;
-width:23.05%;
-height:30%;
-left:37.5%;
-top:54%;
-font-family:Pathway Gothic One;
-font-size:80%;
-color:#000000;
+padding:2%;
+background-color:#B6B6B6;
+width:83%;
+height:83%;
+left:6.5%;
+top:6%;
+font-family: 'Josefin Sans', sans-serif;
+color:#FFFFFF;
+font-size:70%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#friendbox {
-display:inline-block;
-width:32%;
+#bow3 {
+position:absolute;
+width:25%;
 height:25%;
-font-size:80%;
+top:-5.5%;
+left:38%;
+background-image: url('https://i.imgur.com/E8VEKNk.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#biggifbox {
+position:absolute;
+background-color:rgba(255, 255, 255, 0.56);
+width:20%;
+left:39.2%;
+height:27%;
+top:58%;
+}
+
+#gifborder {
+position:relative;
+border:4px dashed #B6B6B6;
+width:84%;
+height:78%;
+left:6.5%;
+top:9%;
+}
+
+#gifbox {
+position:relative;
+background-color:#B6B6B6;
+width:86.5%;
+height:80%;
+left:6.5%;
+top:10%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bow4 {
+position:absolute;
+width:30%;
+height:30%;
+top:74.8%;
+left:35%;
+background-image: url('https://i.imgur.com/Xzz2GX9.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#bigtitlebox {
+position:absolute;
+background-color:rgba(255, 255, 255, 0.56);
+width:7%;
+left:59.8%;
+height:68%;
+top:17%;
+}
+
+#titleborder {
+position:relative;
+border:4px dashed #B6B6B6;
+width:62%;
+height:91%;
+left:15%;
+top:3.5%;
+}
+
+#title {
+position:relative;
+padding:2%;
+background-color:#B6B6B6;
+width:55%;
+height:92%;
+left:20%;
+top:3.5%;
+color:#404040;
+text-align:center;
+font-size:140%;
+font-family: 'Slabo 27px', serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bow5 {
+position:absolute;
+width:50%;
+height:50%;
+top:-20.5%;
+left:55.5%;
+background-image: url('https://i.imgur.com/JVAtWHm.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#bow6 {
+position:absolute;
+width:50%;
+height:50%;
+top:70.1%;
+left:55.5%;
+background-image: url('https://i.imgur.com/UMqszbK.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+img {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+img:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox1 {
 position:absolute;
-width:10%;
+background-color:#B6B6B6;
+width:25%;
+top:15%;
 height:30%;
-left:30%;
-top:23%;
+left:3%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox2 {
 position:absolute;
-width:10%;
+background-color:#B6B6B6;
+width:25%;
+top:15%;
 height:30%;
-left:60.05%;
-top:23%;
+left:37.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-.tabs1 {
+#tabbox3 {
+position:absolute;
+background-color:#B6B6B6;
+width:25%;
+top:15%;
+height:30%;
+left:71%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#B6B6B6;
+width:25%;
+top:58%;
+height:30%;
+left:3%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#B6B6B6;
+width:25%;
+top:58%;
+height:30%;
+left:37.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#B6B6B6;
+width:25%;
+top:58%;
+height:30%;
+left:71%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs {
 display:block;
 padding:1%;
-width:100%;
-height:13%;
-margin-top:15%;
-text-align:left;
-color:#ffffff;
-font-family:Amatic SC;
-font-size:100%;
-background-color:#58738D;
-border:1px solid #ffffff;
+margin-top:2%;
+margin-left:4%;
+width:90%;
+height:70%;
+text-align:center;
+color:#FFFFFF;
+font-family: 'Josefin Sans', sans-serif;
+font-size:55%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-.tabs1:hover {
-background-color:#6D8041;
-color:#ffffff;
-width:120%;
-margin-left:-30%;
+.tabs:hover {
+color:#404040;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-.tabs2 {
-display:block;
-padding:1%;
-width:100%;
-height:13%;
-margin-top:15%;
-text-align:right;
-color:#ffffff;
-font-family:Amatic SC;
-font-size:100%;
-background-color:#58738D;
-border:1px solid #ffffff;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-.tabs2:hover {
-background-color:#6D8041;
-color:#ffffff;
-width:120%;
-margin-left:10%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18 {
 display: none;
 }
 
+#picbox:hover,#content:hover,#gifbox:hover,#title:hover,#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover,#tabbox6:hover {
+-webkit-box-shadow: 0px 0px 11px 1px rgba(64,64,64,1);
+-moz-box-shadow: 0px 0px 11px 1px rgba(64,64,64,1);
+box-shadow: 0px 0px 11px 1px rgba(64,64,64,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 a {
-color:#6D8041;
+color:#798cb3;
+font-family: 'Inconsolata', monospace;
 }
 
 i {
-color:#6D8041;
-font-size:90%;
+color:#404040;
+font-size:80%;
 }
 
 h1 {
-color: #58738D;
-border-bottom: 1px dashed #666666;
-font-family: Amatic SC;
-text-align:center;
+color: #CCCCCC;
+background-color:#333333;
+border-left:10px solid #555555;
+font-family: 'Inconsolata', monospace;
+text-align:left;
 font-size: 120%;
 }
 
 b {
 font-size: 100%;
-color:#58738D;
+color:#404040;
+font-family: 'Inconsolata', monospace;
 }
 </style>
 
-<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-4/oth374.cur), progress !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pathway+Gothic+One" rel="stylesheet">
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/others/oth-4/oth374.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans|Slabo+27px" rel="stylesheet">
 <script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('picbox2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('picbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('gifbox').innerHTML=document.getElementById(id).innerHTML}</script>
 
+<div id="bgbox">
+</div>
 
-<div id="picbox1">
+<div id="bigpicbox">
+<div id="picborder">
+<div id="picbox">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/j7Tq8Jo.png"/>
 </div>
-<div id="title">
-<b>The Violinist</b> <FONT COLOR="#6D8041">❤</FONT>
 </div>
+<div id="bow1">
+</div>
+</div>
+
+<div id="bigtabbox">
+<div id="bow2">
+</div>
+<div id="tabboxborder">
 <div id="tabbox1">
-<span class="tabs1" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">⋆ Details</span>
-<span class="tabs1" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">⋆ History</span>
-<span class="tabs1" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">⋆ Relations</span>
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2');changeNavigation2 ('tab3');">Details</span>
 </div>
 <div id="tabbox2">
-<span class="tabs2" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Inventory ⋆</span>
-<span class="tabs2" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Conjuration ⋆</span>
-<span class="tabs2" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">[ ??? ] ⋆</span>
+<span class="tabs" onClick="changeNavigation ('tab4');changeNavigation1 ('tab5');changeNavigation2 ('tab6');">History</span>
 </div>
-<div id="picbox2">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/csNfjev.png"/>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8');changeNavigation2 ('tab9');">Relations</span>
 </div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab10');changeNavigation1 ('tab11');changeNavigation2 ('tab12');">Inventory</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14');changeNavigation2 ('tab15');">Conjuration</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab16');changeNavigation1 ('tab17');changeNavigation2 ('tab18');">[ ??? ]</span>
+</div>
+</div>
+</div>
+
+<div id="bigcontentbox">
+<div id="bow3">
+</div>
+<div id="contentborder">
 <div id="content">
-<h1>Basic Information</h1>
+<h1>> Basic Information</h1>
 <b>Name:</b> Nella Voltolini<br>
 <b>Age:</b> Early Twenties<br>
 <b>Birthdate:</b> April 14th<br>
@@ -207,23 +459,50 @@ color:#58738D;
 <b>Height:</b> 5'7"<br>
 <b>Weight:</b> 120 lbs.
 </div>
+</div>
+</div>
+
+<div id="biggifbox">
+<div id="gifborder">
+<div id="gifbox">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/vanCIfO.gif"/>
+</div>
+</div>
+<div id="bow4">
+</div>
+</div>
+
+<div id="bigtitlebox">
+<div id="titleborder">
+<div id="title">
+<br>T<br>h<br>e<br><br>V<br>i<br>o<br>l<br>i<br>n<br>i<br>s<br>t
+</div>
+</div>
+<div id="bow5">
+</div>
+<div id="bow6">
+</div>
+</div>
 
 <div id="tab1">
-<h1>Appearance</h1>
+<h1>> Appearance</h1>
 While not very muscular, Nella has still grown to be very fit in stature. There isn't very much excess mass to her slender frame, save for her luxuriously rounded bust and rear, allowing her to stay small and agile. While she doesn't have very much strength she makes up for it in endurance and flexibility. Her skin is smooth and blemish-free, stretching perfectly over her hourglass figure in its soft brown hues. Very dark thick brown hair hangs frames her face and reaches all the way to her lower back. Nella's facial structure is rather gentle, her cheekbones visible but softened by rosy rounded cheeks, a small pointed chin, a narrow cute nose, and a pair of full pink lips. Her eyes are wide, being the main cause of her youthful appearance, but her irises are such a dark shade of brown that it is hard to separate them from her black pupils. 
 <br><br>
-<h1>Attire</h1>
+<h1>> Attire</h1>
 She is very modest and simple in her style choice, wearing mostly t-shirts and skirts or long pants. Very little jewelry ever decorates her body and her long hair is usually left to hang down naturally. 
 <br><br>
-<h1>Personality</h1>
+<h1>> Personality</h1>
 As a human mage trials have led her to be a very calculating individual. She may come off as shy or reserved but Nella is primarily quiet. She continuously watches in order to learn everything she can about a person. When she does speak, her words are few and deliver exactly what is on her mind and nothing more or less. She often spends her energy learning what she can do to help others around her, but some suspect a scheme behind her innocent eyes.
 </div>
 <div id="tab2">
-<img style="height:100%;" src="https://i.imgur.com/Z0Cic4b.png"/> ------------ <img style="height:100%;" src="https://i.imgur.com/tgUtRuq.png"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/ulYkO5k.png"/>
+</div>
+<div id="tab3">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/9GLOFKe.gif"/>
 </div>
 
-<div id="tab3">
-<h1>Nella's Story Thus Far</h1>
+<div id="tab4">
+<h1>> Nella's Story Thus Far</h1>
 For her entire childhood, Nella Maria Voltolini was raised in a little orphanage off the city known as Verona, Italy. Unbeknownst to her, she was one of two Voltolini daughters, her father a renown surgeon and her mother an elite violinist. She grew up very shy in a dog-eat-dog world, her only friends being a boy named Apollo and her own violin. Music was her light in a dark world and she pursued it passionately since the day she could walk.
 <br><br>
 When she came of age and was legally allowed to leave the orphanage to live on her own, Nella headed straight for The Temple of Symphony in Venice, the patron goddess of music. There she would serve her favorite and most cherished deity with her natural talent. A few years brought her to high ranks within the temple, which meant she was allowed around some of the most prestigious musicians of her time. It was with them that she discovered magic!
@@ -232,103 +511,64 @@ The Arcane Arts piqued the young woman's interest, and rumors of magical academi
 <br><br>
 A short time after her arrival and her developing relationship with an Auror named Ryan O'Connor, her loyalty to her heart led her to run away from the Academy with him. He and his closest friends had committed crimes against the staff of the academy and were considered exiles. While they attempted to live on the run, they were aprehended, and a scuffle resulted in her own death as well as the death of her dearest. Her body rests somewhere in the grasp of the mages they so desperately attempted to escape, her spirit awaiting revival anxiously so she can be with her loved ones again, and continue her journey to becoming a powerful mage.
 </div>
-<div id="tab4">
-<img style="width:100%;height:100%;" src="https://68.media.tumblr.com/0d2fb25d7a8ff0c9b5cd35d8c7353ccd/tumblr_nukycsA6G21ssq9uio1_500.gif"/>
-</div>
-
 <div id="tab5">
-<h1>Foundations & Relations</h1>
-<div id="friendbox">
-<a target="_blank" href="http://musician.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/m/u/musician/thumb.jpg"/></a>
-<a target="_blank" href="http://musician.chatango.com">Ryan O'Connor</a><br>
-"Musician"<br>
-<b>Boyfriend</b><br>
-<i>Paige:</i> Conjuration</div>
-<div id="friendbox">
-<a target="_blank" href="http://glass.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/g/l/glass/thumb.jpg"/></a>
-<a target="_blank" href="http://glass.chatango.com">Claire O'Connor</a><br>
-"Glass"<br>
-<b>Best Friend</b><br>
-<i>NPC</i>
-</div>
-<div id="friendbox">
-<a target="_blank" href="http://alkra.chatango.com"><img align="left" style="height:79%;" src="http://fp.chatango.com/profileimg/a/l/alkra/thumb.jpg"/></a>
-<a target="_blank" href="http://alkra.chatango.com">Alkra</a><br>
-"Alkra"<br>
-<b>Acquaintance</b><br>
-<i>H.Archmage:</i> Kinetics
-</div>
-<div id="friendbox">
-<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
-<a target="_blank" href="">???</a><br>
-"???"<br>
-<b>???</b><br>
-<i>???</i>
-</div>
-<div id="friendbox">
-<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
-<a target="_blank" href="">???</a><br>
-"???"<br>
-<b>???</b><br>
-<i>???</i>
-</div>
-<div id="friendbox">
-<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
-<a target="_blank" href="">???</a><br>
-"???"<br>
-<b>???</b><br>
-<i>???</i>
-</div>
-<div id="friendbox">
-<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
-<a target="_blank" href="">???</a><br>
-"???"<br>
-<b>???</b><br>
-<i>???</i>
-</div>
-<div id="friendbox">
-<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
-<a target="_blank" href="">???</a><br>
-"???"<br>
-<b>???</b><br>
-<i>???</i>
-</div>
-<div id="friendbox">
-<a target="_blank" href=""><img align="left" style="height:79%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
-<a target="_blank" href="">???</a><br>
-"???"<br>
-<b>???</b><br>
-<i>???</i>
-</div>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/HbJYta3.png"/>
 </div>
 <div id="tab6">
-<img style="width:100%;height:100%;" src="https://68.media.tumblr.com/42a43df7cee38dd7317a2f91c12305a4/tumblr_myylri5dVq1qbvovho2_500.gif"/>
+<img style="width:100%;height:100%;" src="https://78.media.tumblr.com/629bc72adaeed37c33ae7619942ff503/tumblr_nztrsjixq81rlnazyo1_500.gif"/>
 </div>
 
 <div id="tab7">
-<h1>Items</h1>
+<h1>> Foundations & Relations</h1>
+The people in Nella's life she's grown close to, through the development of her story. Currently the most important person in her life is <font color="#ff0000">Ryan O'Connor</font>, her boyfriend and steady partner.
+<br><br>
+<a target="_blank" title="Ryan" href="http://musician.chatango.com"><img align="left" style="height:15%;" src="http://fp.chatango.com/profileimg/m/u/musician/thumb.jpg"/></a>
+<a target="_blank" title="Claire" href="http://glass.chatango.com"><img align="left" style="height:15%;" src="http://fp.chatango.com/profileimg/g/l/glass/thumb.jpg"/></a>
+<a target="_blank" title="Alkra" href="http://alkra.chatango.com"><img align="left" style="height:15%;" src="http://fp.chatango.com/profileimg/a/l/alkra/thumb.jpg"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+<a target="_blank" href="http://chatango.com"><img align="left" style="height:15%;" src="https://i.imgur.com/H6Xb3Aa.png"/></a>
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/gKjyskY.png"/>
+</div>
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://68.media.tumblr.com/42a43df7cee38dd7317a2f91c12305a4/tumblr_myylri5dVq1qbvovho2_500.gif"/>
+</div>
+
+<div id="tab10">
+<h1>> Items</h1>
 <b>The Violin</b><br>
 Just the typical body of a full sized Stradivarius violin, crafted out of oak. The instrument itself is nearly as old as its owner! Nella often carries this object strapped to her back in a fashion akin to a quiver of arrows. 
 <br><br>
-<h1>Medium</h1>
+<h1>> Medium</h1>
 Not yet accessible.
 <br><br>
-<h1>Universal Spells (Mana Manipulation)</h1>
+<h1>> Universal Spells</h1>
 <b>Mana Weave</b><br>
 The ability to channel mana into the palms of ones hands and their mediums. This is basic mana control and the first spell every mage should learn.
 <br><br>
 <b>Mana Spark</b><br>
 A basic projectile attack created out of the users mana. This is the first offensive spell that a mage will learn.
 </div>
-<div id="tab8">
+<div id="tab11">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/9raDsxY.png"/>
+</div>
+<div id="tab12">
 <img style="width:100%;height:100%;" src="https://i.imgur.com/XB2EBqq.gif"/>
 </div>
 
-<div id="tab9">
-<h1>Conjuration (Paige)</h1>
+<div id="tab13">
+<h1>> Conjuration (Paige)</h1>
 <i>"Allows you to summon any range of objects to your disposal. These Summonings are imbued with special properties or given specific abilities. Conjurers may learn to animate their summonings telekinetically, as well as place certain rules or restrictions upon their objects. Such mages may be able to access the capabilities of other trees in a limited capacity."</i>
 <br><br>
-<h1>Paige Spells</h1>
+<h1>> Paige Spells</h1>
 <b>Grabby Hand (Taught by Ryan O'Connor)</b><br>
 Nella summons a strange, sort of ethereal glove that covers her hand, with a magical tether attached. Nella can shoot this glove off of her hand to reach for an object/person a max distance of (15) feet away; and can either haul the object toward her or pull herself toward the object, akin to a grappling hook.
 <br><br>
@@ -339,18 +579,24 @@ An intricate violin bow that has the ability to convert into an archer's bow, an
 A tin construct that covers the entirety of the caster's face and offers her a slight buff in physical speed (x1.25) when summoned (wears off when desummoned,  destroyed, or is no longer in physical contact with the caster). The mask has lenses for the eyes that allow the caster to see out but not those on the outside to see in. There are very thin layered vents in the mask's surface that allow the caster to breathe when it is summoned, but are too small for even most insects to crawl in through. While the mask can be removed at will when summoned, it has a magical ability that allows it to stick to the frame of the caster's face perfectly and tightly enough to stay on unless intentionally removed.
 <br><br>
 </div>
-<div id="tab10">
-<img style="height:100%;margin-left:15%;" src="https://i.imgur.com/ZFYndux.png"/>
+<div id="tab14">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/khlrwcH.png"/>
+</div>
+<div id="tab15">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/uyJGl6M.png"/>
 </div>
 
-<div id="tab11">
+<div id="tab16">
 <h1>??? (???)</h1>
 <i>"???"</i>
 <br><br>
 Not yet accessible.
 </div>
-<div id="tab12">
-<img style="height:100%;margin-left:15%;" src="https://i.imgur.com/NIMPSld.png"/>
+<div id="tab17">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/0xblwWO.png"/>
+</div>
+<div id="tab18">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/T2w7mbc.png"/>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Vet Nella.mp3" autostart="true" loop="true">
